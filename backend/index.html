@@ -577,9 +577,9 @@
                 const scheme =
                     window.location.protocol === "https:" ? "wss:" : "ws:";
 
-                const newSocket = new WebSocket(
-                    `${scheme}//${window.location.host}/ws/${roomId}`
-                );
+               const newSocket = new WebSocket(
+    `wss://secure-chat-mqc.onrender.com/ws/${roomId}`
+);
 
                 socket = newSocket;
 
